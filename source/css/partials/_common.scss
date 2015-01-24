@@ -1,0 +1,45 @@
+body {
+	font-family: "proxima-nova",sans-serif;
+	position: relative;
+}
+
+a {
+	transition: $clean-transition;
+
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+.divider {
+	margin: 60px 0;
+}
+
+.section-heading {
+	padding-bottom: 30px;
+	font-size: $fontSizeBig;
+	margin-top: 0;
+}
+
+.section-content {
+	padding: 30px 0;
+	text-align: center;
+}
+
+.horizontal-list-item {
+	display: inline-block;
+	min-width: 50px;
+	min-height: 75px;
+	margin: 0 4px;
+	padding: 0 30px;
+	position: relative;
+}
+
+.os-animation{
+  opacity: 0;
+}
+ 
+.os-animation.animated{
+    opacity: 1;
+}
+
