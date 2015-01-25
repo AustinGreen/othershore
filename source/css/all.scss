@@ -7,3 +7,10 @@
 @import "partials/common";
 @import "partials/navs";
 @import "partials/responsive";
+
+.logo {
+	position: fixed;
+	top: 5%;
+	left: 5%;
+	font-size: 6em;
+}
