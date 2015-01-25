@@ -1,9 +1,26 @@
 @import "partials/reset";
 @import "bootstrap";
 @import "compass/css3";
+@import "compass/layout";
 @import "compass/utilities";
 @import "partials/variables";
 @import "partials/animate";
 @import "partials/common";
 @import "partials/navs";
 @import "partials/responsive";
+
+@include sticky-footer(70px, ".container-fluid", ".root-footer", ".main-footer");
+
+.contact-list {
+	@include horizontal-list(20px, left);
+	float: right;
+	padding-right: 60px;
+
+	a {
+		color: #fff;
+
+		&:hover {
+			color: #e6e6e6;
+		}
+	}
+}

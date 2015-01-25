@@ -7,4 +7,49 @@
   <div class="col-xs-12 col-sm-10">
     <p class="lead">Othershore encourages discovery through design.</p>
   </div>
+  <div class="root-footer"></div>
 </div>
+<footer class="main-footer">
+  <ul class="contact-list">
+    <li class="twitter-li">
+      <a href="http://twitter.com/o____s____" target="_blank">
+        <i class="fa fa-twitter fa-3x"></i>
+      </a>
+    </li>
+    <li class="instagram-li">
+      <a href="http://instagram.com/o____s____" target="_blank">
+        <i class="fa fa-instagram fa-3x"></i>
+      </a>
+    </li>
+    <li class="shop-li">
+      <a href="#">
+        <i class="fa fa-shopping-cart fa-3x"></i>
+      </a>
+    </li>
+    <li class="mail-li">
+      <a href="mailto:wearetheothershore@gmail.com" target="_blank">
+        <i class="fa fa-envelope fa-3x"></i>
+      </a>
+    </li>
+  </ul>
+</footer>
+<%= javascript_include_tag "all" %>
+<script>
+  function animationClick(element, animation){
+      element = $(element);
+      element.click(
+          function() {
+              element.addClass('animated ' + animation);        
+              //wait for animation to finish before removing classes
+              window.setTimeout( function(){
+                  element.removeClass('animated ' + animation);
+              }, 1000);         
+    
+          });
+  }
+  $(document).ready(function(){
+    $('.shop-li').each(function() {
+        animationClick(this, 'shake');
+    });
+});
+</script>
