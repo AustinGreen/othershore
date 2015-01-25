@@ -1,1 +1,13 @@
+@media (max-width: 790px) {
+	.lead {
+		font-size: 3em;
+		padding-top: 40px; 
+	}
+}
 
+@media (max-width: 575px) {
+	.lead {
+		font-size: 2em;
+		padding-top: 60px; 
+	}
+}
